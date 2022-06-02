@@ -1,0 +1,33 @@
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+a{
+  color: blanchedalmond;
+  font-style: normal;
+  text-decoration: none;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 10vw;
+    margin: 0px 8px;
+    border-radius: 30px;
+    color: white;
+    background-color: #007000;
+    line-height: 35px;
+}
+
+li:active{
+  background-color: #009000;
+  transform: scale(1.05,1.05);
+
+}
