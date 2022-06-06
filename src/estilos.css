@@ -1,4 +1,6 @@
-
+*{
+  font-family: 'Raleway', sans-serif;
+}
 header{
   display: flex;
   flex-direction: row;
@@ -30,4 +32,19 @@ li:active{
   background-color: #009000;
   transform: scale(1.05,1.05);
 
+}
+
+.material-symbols-outlined{
+  margin-top:1vh;
+  margin-left: 1vw;
+  transform: scale(1.25,1.25);
+}
+
+.material-symbols-outlined:active{
+  transform: scale(1.05,1.05);
+  color: rgb(29, 29, 29);
+
+}
+.ContainerPrincipal{
+  margin-left: 5vw;
 }
