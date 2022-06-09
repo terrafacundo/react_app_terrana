@@ -1,11 +1,10 @@
 import NavBar from "./components/NavBar";
-import ItemListContainer from "./components/ItemListContainer";
+import SeccionCompra from "./components/SeccionCompra";
 
 const App = () => (
 	<>
 		<NavBar/>
-		<ItemListContainer 
-		saludo="Bienvenidos nuevamente"/>
+		<SeccionCompra />
 
 	</>
 );
