@@ -1,12 +1,14 @@
+import MainDOM from "./components/MainDOM";
 import NavBar from "./components/NavBar";
 import SeccionCompra from "./components/SeccionCompra";
 
-const App = () => (
+const App = () =>{ 
+	return(
 	<>
 		<NavBar/>
-		<SeccionCompra />
+		<MainDOM/>
 
 	</>
-);
+)};
 
 export default App

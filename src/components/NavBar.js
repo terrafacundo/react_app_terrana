@@ -1,7 +1,8 @@
 import CartWidget from "./CartWidget"
 
 
-const NavBar = () =>(
+const NavBar = () =>{
+    return(
     <header>
         <a href="../index.html">
             <img src="https://web.dm.uba.ar/images/logo_clean_wide.png"></img>
@@ -16,6 +17,6 @@ const NavBar = () =>(
         </ul>
     </header>
 
-);
+)};
 
 export default NavBar
