@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react"
 
-const SeccionCompra = () =>{
-    const [contador,funcionCantidad]=useState(0)
 
+const ItemCount = ({inicio,stock,onAdd}) =>{
+    const [contador,setContador]=useState(inicio);
     const sumarCurso = () =>{
-        funcionCantidad(contador+1)
+        setContador(contador<stock?contador+1:contador);
     }
 
     const restarCurso = () =>{
-        funcionCantidad(contador<=0?contador:contador-1)
+        setContador(contador<=0?contador:contador-1)
     }
     const reinicioCurso = () =>{
-        funcionCantidad(0);}
+        setContador(0);}
     return(
     <>
     <div id="contenedorCompra">
@@ -26,4 +26,5 @@ const SeccionCompra = () =>{
     </>
 )};
 
-export default SeccionCompra
+
+export default ItemCount

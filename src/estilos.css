@@ -52,7 +52,6 @@ li:active{
 main{
   display: flex;
   flex-direction: column;
-  align-items: end;
 }
 
 /*estilo de carrito*/
@@ -98,4 +97,25 @@ main{
 #botones img {
   width: 1.25vw;
   height: 1.25vw;
+}
+
+/*Sector cursos*/
+
+#contenedorCursos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#curso{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  width: 20vw;
+  height: 20vh;
+  border: none 1px;
+  Border-radius: 5px;
+  box-shadow: -2px 2px 2px 2px rgba(0,0,0,0.1);
 }
