@@ -1,18 +1,17 @@
 import CartWidget from "./CartWidget"
-
+import {Link} from "react-router-dom";
 
 const NavBar = () =>{
     return(
     <header>
-        <a href="../index.html">
+        <Link to="/">
             <img src="https://web.dm.uba.ar/images/logo_clean_wide.png"></img>
-        </a>
+        </Link>
         <ul>
-            <li><a id="link" href="#">Inicio</a></li>
-            <li><a id="link" href="#">Institucional</a></li>
-            <li><a id="link" href="#">Enseñanza</a></li>
-            <li><a id="link" href="#">Extensión</a></li>
-            <li><a id="link" href="#">Investigación</a></li>
+            <li><Link id="link" to="/institucional">Institucional</Link></li>
+            <li><Link id="link" to="/enseñanza">Cursos</Link></li>
+            <li><Link id="link" to="/extension">Extensión</Link></li>
+            <li><Link id="link" to="/investigacion">Investigación</Link></li>
             <CartWidget/>
         </ul>
     </header>

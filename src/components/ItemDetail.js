@@ -1,16 +1,15 @@
-import detalle from "./Detalle";
 
-const ItemDetail = ({detalle})=>{
-    return(
-        detalle.map(d=>
-        <div key={d.id} id="detalle">
-            <h2>{d.titulo}</h2>
-            <img src={d.imagen} alt={d.titulo}></img>
-            <h4>{d.descripcion}</h4>
-            <h5>Cupos Disponibles: {d.stock}</h5>
+function ItemDetail({ id, nombre, precio, imagen, descripcion, stock }) {
+    return (
+        <div key={id} id="detalle">
+            <h2>{nombre}</h2>
+            <h4>{precio}</h4>
+            <img src={imagen} alt={nombre}></img>
+            <h4>{descripcion}</h4>
+            <h5>Cupos Disponibles: {stock}</h5>
             <button>Inscribirse Ahora</button>
         </div>
-    ))
+    );
 }
 
 export default ItemDetail;

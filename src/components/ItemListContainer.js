@@ -7,11 +7,10 @@ const ItemListContainer = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        customFetch(2000,productos)
+        customFetch(500,productos)
         .then(r =>setItems(r));
     },[items]);
 
-    console.log(items);
     return(
             <div id="contenedorCursos">
                 <ItemList producto={items} id="curso"/>
